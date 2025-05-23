@@ -5,7 +5,8 @@
 // バッファオーバーフローを意図的に発生
 void vulnerable_copy(const char* input) {
     char buffer[8];
-    strcpy(buffer, input);  // ✅ CodeQLが検出（CWE-121: Stack-based Buffer Overflow）
+    strncpy(buffer, input, sizeof(buffer) - 1);  // Copy up to 7 characters
+    buffer[sizeof(buffer) - 1] = '\0';  // Ensure null termination
     std::cout << "Copied: " << buffer << std::endl;
 }
 
