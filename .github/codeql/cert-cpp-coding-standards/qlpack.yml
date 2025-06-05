@@ -1,0 +1,14 @@
+---
+library: false
+warnOnImplicitThis: false
+name: codeql/cert-cpp-coding-standards
+version: 2.46.0
+description: CERT C++ 2016
+license: MIT
+buildMetadata:
+  sha: df6fd15a0a7bdd8d235ba280e4d8cf5caf65852c
+  cliVersion: 2.19.4
+dependencies:
+  codeql/common-cpp-coding-standards: '*'
+  codeql/cpp-all: 2.1.1
+suites: codeql-suites

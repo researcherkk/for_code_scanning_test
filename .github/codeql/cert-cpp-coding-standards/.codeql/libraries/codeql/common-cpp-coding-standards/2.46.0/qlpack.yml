@@ -1,0 +1,13 @@
+---
+library: false
+warnOnImplicitThis: false
+name: codeql/common-cpp-coding-standards
+version: 2.46.0
+license: MIT
+buildMetadata:
+  sha: df6fd15a0a7bdd8d235ba280e4d8cf5caf65852c
+  cliVersion: 2.19.4
+dependencies:
+  codeql/cpp-all: 2.1.1
+dataExtensions:
+ - ext/*.model.yml
