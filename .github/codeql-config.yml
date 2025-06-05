@@ -1,3 +1,4 @@
 name: "CERT C++ Custom Queries"
 queries:
-  - uses: ./.github/codeql/cert-cpp-coding-standards/rules/CON50-CPP/DoNotAllowAMutexToGoOutOfScopeWhileLocked.ql
+  - uses: ./.github/codeql/cert-cpp-coding-standards/rules
+  #- uses: ./.github/codeql/cert-cpp-coding-standards/rules/CON50-CPP/DoNotAllowAMutexToGoOutOfScopeWhileLocked.ql
