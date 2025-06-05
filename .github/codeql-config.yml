@@ -1,0 +1,3 @@
+name: "CERT C++ Custom Queries"
+queries:
+  - uses: .github/codeql/cert-cpp-coding-standards/rules/
